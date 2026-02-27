@@ -36,9 +36,17 @@
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 35px; }
         .brand { font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 13px; color: var(--text-dim); }
         
-        /* Увеличенная кнопка Телеграм */
-        .tg-link svg { width: 34px; height: 34px; fill: #fff; transition: var(--transition); }
-        .tg-link:hover svg { fill: var(--accent-blue); transform: scale(1.1); }
+        /* Новая круглая иконка Телеграм */
+        .tg-link {
+            width: 42px;
+            height: 42px;
+            background-image: url('tg_logo.png'); /* Ссылка на твое фото логотипа */
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        .tg-link:hover { transform: scale(1.1); box-shadow: 0 0 15px rgba(36, 161, 222, 0.4); }
 
         h1 { font-size: 42px; font-weight: 800; margin: 0 0 30px 0; letter-spacing: -1px; background: linear-gradient(to bottom, #fff 60%, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
@@ -58,9 +66,7 @@
 
         .btn { display: flex; align-items: center; justify-content: center; padding: 16px; border-radius: 14px; text-decoration: none; font-weight: 600; font-size: 15px; transition: var(--transition); }
         .btn-outline { border: 1px solid rgba(255,255,255,0.1); color: #fff; }
-        .btn-outline:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); }
 
-        /* Секция Партнеров */
         .partners-section { margin-top: auto; padding-top: 50px; }
         .partners-title { color: #f39c12; font-size: 18px; font-weight: 600; text-align: center; margin-bottom: 20px; }
         
@@ -82,7 +88,7 @@
             height: 70px;
             border-radius: 50%;
             margin-right: 15px;
-            background-image: url('https://i.ibb.co/XfXmPPrR/1000061991.jpg'); /* Картинка с роботом */
+            background-image: url('robot.png'); /* Иконка робота */
             background-size: cover;
             background-position: center;
             flex-shrink: 0;
@@ -104,9 +110,7 @@
     <div class="container">
         <div class="header">
             <div class="brand">Moon VPN</div>
-            <a href="https://t.me/moonvpnnews" class="tg-link" target="_blank" title="Наш Telegram канал">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.89.03-.24.37-.49 1.02-.75 4-.1.1.74-6.33-1.32-8.67-.66-.35-1.15-.56-1.5-.63-.35-.08-.8-.07-1.11.02-.3.09-.74.32-.74.32s-1.05.5-1.05.54z"/></svg>
-            </a>
+            <a href="https://t.me/moonvpnnews" class="tg-link" target="_blank"></a>
         </div>
 
         <h1>Установка</h1>
